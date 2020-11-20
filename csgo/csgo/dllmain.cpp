@@ -1,7 +1,9 @@
 #include "sdk/includes.h"
 
 unsigned long __stdcall initialize( _In_ LPVOID reserved ) {
+#ifdef _LOGGING
 	utilities::console::open( );
+#endif
 
 	while ( !GetAsyncKeyState( VK_END ) )
 		std::this_thread::sleep_for( std::chrono::milliseconds( 200 ) );
