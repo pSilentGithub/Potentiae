@@ -4,3 +4,4 @@ csgo/.vs/csgo/v16/.suo
 *.db-shm
 *.db-wal
 *.opendb
+*.ipch
